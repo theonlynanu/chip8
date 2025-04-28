@@ -1,0 +1,55 @@
+# Object files
+*.o
+*.obj
+
+# Binaries and executables
+*.exe
+*.out
+*.dll
+*.so
+*.dylib
+
+# Any build, binary, or distribution files/directories created by IDEs
+/build/
+/bin/
+/dist/
+
+# Log files, swap files, backups
+*.log
+*.tmp
+*.swp
+*.cache
+*~
+
+# Test ROMs or assets
+*.rom
+*.ch8
+assets/roms/**
+
+# VSCode
+.vscode/
+.vs/
+
+# Metadata
+.DS_STORE
+Thumbs.db
+Icon\r
+
+# Ctags
+tags
+TAGS
+
+# Build artifacts
+*.zip
+*.tar.gz
+*.7z
+
+# Crash dumps
+core
+core.*
+
+# Secrets (unsure I'll even use these)
+*.pem
+*.env
+.key
+*.crt
