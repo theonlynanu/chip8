@@ -1,4 +1,4 @@
-#include "chip8.h"
+#include "../include/chip8.h"
 #include <stdint.h>
 #include <string.h>
 
@@ -23,4 +23,26 @@ static const uint8_t FONTSET[80] = {
     0xF0, 0x80, 0xF0, 0x80, 0x80, // F
 };
 
+void chip8_init(chip8_t* chip) {
+    if (!chip) {
+        return;
+    }
 
+    // Completely zero out the structure
+    memset(chip, 0, sizeof(chip8_t)); 
+
+    // Set program counter to program entry address
+    chip->PC = PROGRAM_START;
+
+    // Copy sprite data into memory at the bottom - apparently it's convention
+    // to start at 0x050 for the fontset?
+    memcpy(&chip->memory[FONT_START], FONTSET, sizeof(FONTSET));
+}
+
+void chip8_load_rom(chip8_t* chip, const uint8_t* blob, size_t size) {
+
+}
+
+void chip8_cycle(chip8_t* chip) {
+
+}
