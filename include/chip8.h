@@ -1,6 +1,7 @@
 #ifndef CHIP8_H
 #define CHIP8_H
 #include <stdint.h>
+#include <stddef.h>
 #define MEMORY_SIZE 4096 // Max memory size set to 4kB
 #define ROM_LOADING_ADDR 0x200 // Loading point for ROMs - first 512 bytes are 
                                // reserved for the interpreter
