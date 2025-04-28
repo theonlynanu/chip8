@@ -1,7 +1,7 @@
 #include "../include/chip8.h"
 #include <stdio.h>
 
-/* clang testCore./ ../src/chip8.c -o [whatever] */
+/* clang testCore.c ../src/chip8.c -o [whatever] */
 
 
 
